@@ -30,7 +30,7 @@
         }
 
         .container {
-            padding: 80px 120px;
+            padding: 20px 30px;
         }
 
         .person {
@@ -97,8 +97,12 @@
             color: #fff;
         }
 
+        .bg-1 h3 {
+            color: #fff;
+        }
+
         .bg-1 {
-            background: #fff;
+            background: #2d2d30;
             color: #2d2d30;
         }
 
@@ -108,6 +112,10 @@
 
         .bg-1 p {
             font-style: normal;
+        }
+
+        .list-group-item {
+            background-color: #f5f5f5;
         }
 
         .list-group-item:first-child {
@@ -254,7 +262,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#myPage">Kala Utsav 2019</a>
+                <span> <a class="navbar-brand" href="#myPage">Kala Utsav 2019</a></span>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
@@ -332,45 +340,49 @@
         </a>
     </div>
 
-    <div id="about" class="row text-center">
+    <div id="about" class="row text-center" style="background-color: #f5f5f5;">
         <div class="col-sm-8 col-md-offset-2">
-            <div class="thumbnail">
+            <div class="thumbnail" style="background-color: #f5f5f5;">
                 <!--                    <img src="img/logo.png" alt="New York" width="400" height="300">-->
                 <p><strong style="letter-spacing: 4px">Kala Utsav Vouchers</strong></p>
                 <p>This online payment link for Kala Utsav vouchers is only for Intel Blue badge employees. Intel
                     BB employees can buy vouchers for their friends and families. All attendees should follow the
                     Intel code of ethics, the Intel India Privacy policy and event guidelines.
                     <br><br>
-                    Only a limited set of vouchers are sold online, on first come first basis.
-                    Cost: $10.61/-
-                    <br><br>
-                    Please make sure you bring the PayPal receipt (digital on phone or printed) to the venue.
+                    Early bird price $10 + Paypal surcharge . Hurry!!!
                 </p>
+                <br>
                 <a class="btn" type="button" target="_blank"
                     href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9LPSRC3YJA5V2'>
                     Buy Vouchers</a>
+                <br><br>
+
+                Please make sure you bring the PayPal receipt (digital on phone or printed) to the venue.
+
             </div>
         </div>
     </div>
 
     <!-- Container (The Band Section) -->
-    <div  class="row about">
+    <div class="row about">
         <div class="container text-center">
             <h3>About Kala Utsav 2019</h3>
-            <p>
+
+            <p style="background-color: #f5f5f5; color: black; padding: 20px 30px">
                 Intel India OR ERG is excited to invite you to Kala Utsav 2019, formerly known as India Night, one of
                 Intel's
                 biggest cultural celebration.
                 <br>
                 Join us as we celebrate this evening involving dances, music, food and fun !
             </p>
+
         </div>
     </div>
 
     <!-- Container (Event Details) -->
     <div id="event" class="bg-1">
         <div class="container">
-            <h3 class="text-center">Event Details</h3>
+            <h3 class="text-center" style="color: #fff;">Event Details</h3>
             <ul class="list-group">
                 <li class="list-group-item"> DATE: Nov 3rd, Sunday</li>
                 <li class="list-group-item"> Time: 3 PM onwards</li>
@@ -383,8 +395,9 @@
     <div id="faqs" class="faqs">
         <div class="container">
             <div>
-                <h3 style="color: #fff;">FAQ</h3>
-                <div style="color: black;"class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <h3 style="color: #fff; text-align: center">FAQ</h3>
+                <div style="color: black;" class="panel-group" id="accordion" role="tablist"
+                    aria-multiselectable="true">
 
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
