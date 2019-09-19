@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Theme Made By www.w3schools.com - No Copyright -->
     <title>Kala Utsav 2019</title>
@@ -16,7 +17,8 @@
             color: #777;
         }
 
-        h3, h4 {
+        h3,
+        h4 {
             margin: 10px 0 30px 0;
             letter-spacing: 4px;
             font-size: 20px;
@@ -46,7 +48,8 @@
         .carousel-inner img {
             /*-webkit-filter: grayscale(90%);*/
             /*filter: grayscale(90%); !* make all photos black and white *!*/
-            width: 50%; /* Set width to 100% */
+            width: 50%;
+            /* Set width to 100% */
             margin: auto;
         }
 
@@ -56,11 +59,12 @@
 
         @media (max-width: 600px) {
             .carousel-caption {
-                display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+                display: none;
+                /* Hide the carousel text when the screen is less than 600 pixels wide */
             }
         }
 
-        .panel-title > a {
+        .panel-title>a {
             letter-spacing: 0px;
             display: block;
             padding: 10px;
@@ -75,13 +79,22 @@
             color: #2d2d30;
         }
 
-        .panel-title > .small, .panel-title > .small > a, .panel-title > a, .panel-title > small, .panel-title > small > a {
+        .panel-title>.small,
+        .panel-title>.small>a,
+        .panel-title>a,
+        .panel-title>small,
+        .panel-title>small>a {
             color: #2d2d30;
         }
 
-        .faqs {
+        .faqs,
+        .about {
             background: #2d2d30;
-            color: black;
+            color: #fff;
+        }
+
+        .about h3 {
+            color: #fff;
         }
 
         .bg-1 {
@@ -126,20 +139,24 @@
             transition: .2s;
         }
 
-        .btn:hover, .btn:focus {
+        .btn:hover,
+        .btn:focus {
             border: 1px solid #333;
             background-color: #fff;
             color: #000;
         }
 
-        .modal-header, h4, .close {
+        .modal-header,
+        h4,
+        .close {
             background-color: #333;
             color: #fff !important;
             text-align: center;
             font-size: 30px;
         }
 
-        .modal-header, .modal-body {
+        .modal-header,
+        .modal-body {
             padding: 40px 50px;
         }
 
@@ -164,7 +181,8 @@
             opacity: 0.9;
         }
 
-        .navbar li a, .navbar .navbar-brand {
+        .navbar li a,
+        .navbar .navbar-brand {
             color: #d5d5d5 !important;
         }
 
@@ -213,602 +231,587 @@
             border-radius: 0;
         }
 
+        .buyVouchers {
+            background-color: red;
+            font-weight: bold;
+            border-color: #fff;
+            border-style: dashed
+        }
+
         textarea {
             resize: none;
         }
     </style>
 </head>
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#myPage">Kala Utsav 2019</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about">ABOUT</a></li>
-                <li><a target="_blank"
-                       href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9LPSRC3YJA5V2'>
-                    BUY TICKETS</a></li>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">Kala Utsav 2019</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="buyVouchers"><a target="_blank"
+                            href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9LPSRC3YJA5V2'>
+                            BUY VOUCHERS</a></li>
+                    <li><a href="#about">ABOUT</a></li>
                     <li><a href="#faqs">FAQs</a></li>
                     <li><a href="#contact">CONTACT</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+            <li data-target="#myCarousel" data-slide-to="7"></li>
+            <li data-target="#myCarousel" data-slide-to="8"></li>
+            <li data-target="#myCarousel" data-slide-to="9"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+                <img src="img/1.jpg" alt="India Night" width="1200" height="700">
+            </div>
+
+            <div class="item">
+                <img src="img/2.jpg" alt="India Night" width="1200" height="700">
+            </div>
+            <div class="item">
+                <img src="img/3.jpg" alt="India Night" width="1200" height="700">
+            </div>
+            <div class="item">
+                <img src="img/4.jpg" alt="India Night" width="1200" height="700">
+            </div>
+            <div class="item">
+                <img src="img/5.jpg" alt="India Night" width="1200" height="700">
+            </div>
+            <div class="item">
+                <img src="img/6.jpg" alt="India Night" width="1200" height="700">
+            </div>
+            <div class="item">
+                <img src="img/7.jpg" alt="India Night" width="1200" height="700">
+            </div>
+            <div class="item">
+                <img src="img/8.jpg" alt="India Night" width="1200" height="700">
+            </div>
+            <div class="item">
+                <img src="img/9.jpg" alt="India Night" width="1200" height="700">
+            </div>
+            <div class="item">
+                <img src="img/10.jpg" alt="India Night" width="1200" height="700">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div id="about" class="row text-center">
+        <div class="col-sm-8 col-md-offset-2">
+            <div class="thumbnail">
+                <!--                    <img src="img/logo.png" alt="New York" width="400" height="300">-->
+                <p><strong style="letter-spacing: 4px">Kala Utsav Vouchers</strong></p>
+                <p>This online payment link for Kala Utsav vouchers is only for Intel Blue badge employees. Intel
+                    BB employees can buy vouchers for their friends and families. All attendees should follow the
+                    Intel code of ethics, the Intel India Privacy policy and event guidelines.
+                    <br><br>
+                    Only a limited set of vouchers are sold online, on first come first basis.
+                    Cost: $10.61/-
+                    <br><br>
+                    Please make sure you bring the PayPal receipt (digital on phone or printed) to the venue.
+                </p>
+                <a class="btn" type="button" target="_blank"
+                    href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9LPSRC3YJA5V2'>
+                    Buy Vouchers</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container (The Band Section) -->
+    <div  class="row about">
+        <div class="container text-center">
+            <h3>About Kala Utsav 2019</h3>
+            <p>
+                Intel India OR ERG is excited to invite you to Kala Utsav 2019, formerly known as India Night, one of
+                Intel's
+                biggest cultural celebration.
+                <br>
+                Join us as we celebrate this evening involving dances, music, food and fun !
+            </p>
+        </div>
+    </div>
+
+    <!-- Container (Event Details) -->
+    <div id="event" class="bg-1">
+        <div class="container">
+            <h3 class="text-center">Event Details</h3>
+            <ul class="list-group">
+                <li class="list-group-item"> DATE: Nov 3rd, Sunday</li>
+                <li class="list-group-item"> Time: 3 PM onwards</li>
+                <li class="list-group-item"> Location: PSU Viking pavilion, 930 SW Hall St, Portland, OR 97201</li>
             </ul>
         </div>
     </div>
-</nav>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-        <li data-target="#myCarousel" data-slide-to="5"></li>
-        <li data-target="#myCarousel" data-slide-to="6"></li>
-        <li data-target="#myCarousel" data-slide-to="7"></li>
-        <li data-target="#myCarousel" data-slide-to="8"></li>
-        <li data-target="#myCarousel" data-slide-to="9"></li>
-    </ol>
+    <!-- Container (FAQs) -->
+    <div id="faqs" class="faqs">
+        <div class="container">
+            <div>
+                <h3 style="color: #fff;">FAQ</h3>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                    aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    I am an Intel employee. Where can I buy my food voucher?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+                            <div class="panel-body">
+                                You can buy online here. Please click on the Buy Ticket Tab on the top.
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="item active">
-            <img src="img/1.jpg" alt="India Night" width="1200" height="700">
-        </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    What is the price for a food voucher ?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+                            <div class="panel-body">
+                                $10 each - Early bird pricing (limited time).
+                                Prices are subject to change without notice.
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="item">
-            <img src="img/2.jpg" alt="India Night" width="1200" height="700">
-        </div>
-        <div class="item">
-            <img src="img/3.jpg" alt="India Night" width="1200" height="700">
-        </div>
-        <div class="item">
-            <img src="img/4.jpg" alt="India Night" width="1200" height="700">
-        </div>
-        <div class="item">
-            <img src="img/5.jpg" alt="India Night" width="1200" height="700">
-        </div>
-        <div class="item">
-            <img src="img/6.jpg" alt="India Night" width="1200" height="700">
-        </div>
-        <div class="item">
-            <img src="img/7.jpg" alt="India Night" width="1200" height="700">
-        </div>
-        <div class="item">
-            <img src="img/8.jpg" alt="India Night" width="1200" height="700">
-        </div>
-        <div class="item">
-            <img src="img/9.jpg" alt="India Night" width="1200" height="700">
-        </div>
-        <div class="item">
-            <img src="img/10.jpg" alt="India Night" width="1200" height="700">
-        </div>
-    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    What do you mean by a food voucher?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+                            <div class="panel-body">
+                                The PayPal receipt (soft copy) you get when you purchase a ticket for the event is
+                                considered a food voucher. This voucher gets you entry for the show as well as for the
+                                food.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapse4" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    Do I need to get a printout of the receipt of the food voucher?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+                            <div class="panel-body">
+                                No. Only a soft copy of the PayPal receipt on your mobile or Tablet is needed as a proof
+                                of
+                                food voucher.
+                                Our volunteers will be checking for the PayPal receipt.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapse5" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    I want to only watch the show and need no food. Do I still need to buy the food
+                                    vouchers?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+                            <div class="panel-body">
+                                Yes. Food vouchers are compulsory for entry.
+                                Failure to show the soft copy of the receipt will lead to denial of admission to the
+                                event.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapse6" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    Do you have any walk-in food voucher?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse6" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+                            <div class="panel-body">
+                                No. All food vouchers are available to purchase before the event.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapse7" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    Can I buy food voucher for my friends who is non-Intel?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse7" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingThree" aria-expanded="false">
+                            <div class="panel-body">
+                                Yes you can. We would ask you to restrict to friends and family. Please follow Intel's
+                                code
+                                of conduct/ethics policies.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapse8" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    I am not an Intel employee. Where can I buy the food voucher?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse8" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingThree" aria-expanded="false">
+                            <div class="panel-body">
+                                Only Intel employees are eligible to buy food vouchers online.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapse9" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    Are there any family prices?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse9" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingThree" aria-expanded="false">
+                            <div class="panel-body">
+                                No. We offer only one fixed price. Prices are subject to change without notice.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapse10" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    Are there special prices for kids?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse10" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingThree" aria-expanded="false">
+                            <div class="panel-body">
+                                No, but we would like to offer free entry for children 3 and under. Please remember that
+                                your toddler will not be assigned a separate seat at the venue.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapse11" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    Is there a maximum limit to number of tickets someone can purchase?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse11" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingThree" aria-expanded="false">
+                            <div class="panel-body">
+                                Currently there is no limit but the maximum limit are subject to change with notice.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapse12" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    Is food included in the price?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse12" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingThree" aria-expanded="false">
+                            <div class="panel-body">
+                                Yes. Dinner is included in the price.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapse13" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    Can the food Voucher be refunded?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse13" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingThree" aria-expanded="false">
+                            <div class="panel-body">
+                                No. All sales are final and we do not issue any refunds.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapse14" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    Is parking included in the food voucher price?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse14" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingThree" aria-expanded="false">
+                            <div class="panel-body">
+                                No. Please plan ahead for parking. As the event is hosted in Downtown Portland nearer to
+                                MAX
+                                stations, we recommend you to use public transport or carpool with your friends and
+                                family.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapse15" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    What if I lose the food receipt? Do I need to present the food voucher at the venue?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse15" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingThree" aria-expanded="false">
+                            <div class="panel-body">
+                                Please keep your food voucher receipt (soft copy) safe. It’s not practical
+                                (logistically) to
+                                allow people to the venue without a food voucher.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapse16" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    I am volunteering/participating for the show. Should I buy vouchers for myself?
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse16" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingThree" aria-expanded="false">
+                            <div class="panel-body">
+                                IIndia-OR requests you to hold off on buying vouchers for now. We are aiming for
+                                complementary entry for performers to the show, if not you will get a chance to buy the
+                                vouchers at later dates.
+                            </div>
+                        </div>
+                    </div>
 
-<!-- Container (The Band Section) -->
-<div id="about" class="container text-center">
-    <h3>About Kala Utsav 2019</h3>
-    <p>
-        Intel India OR ERG is excited to invite you to Kala Utsav 2019, formerly known as India Night, one of Intel's
-        biggest cultural celebration.
-        <br>
-        Join us as we celebrate this evening involving dances, music, food and fun !
-    </p>
-</div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapse17" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    I am volunteering/participating for the show. Should I buy vouchers for my family?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse17" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingThree" aria-expanded="false">
+                            <div class="panel-body">
+                                Please purchase vouchers for your family members right now.
+                            </div>
+                        </div>
+                    </div>
 
-<!-- Container (TOUR Section) -->
-<div id="event" class="bg-1">
-    <div class="container">
-        <h3 class="text-center">Event Details</h3>
-        <ul class="list-group">
-            <li class="list-group-item"> DATE: Nov 3rd, Sunday</li>
-            <li class="list-group-item"> Time: 3 PM onwards</li>
-            <li class="list-group-item"> Location: PSU Viking pavilion, 930 SW Hall St, Portland, OR 97201</li>
-        </ul>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapse18" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    Do I need my Intel badge?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse18" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingThree" aria-expanded="false">
+                            <div class="panel-body">
+                                No
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="row text-center">
-            <div class="col-sm-8 col-md-offset-2">
-                <div class="thumbnail">
-                    <!--                    <img src="img/logo.png" alt="New York" width="400" height="300">-->
-                    <p><strong style="letter-spacing: 4px">Kala Utsav Vouchers</strong></p>
-                    <p>This online payment link for Kala Utsav vouchers is only for Intel Blue badge employees. Intel
-                        BB employees can buy vouchers for their friends and families. All attendees should follow the
-                        Intel code of ethics, the Intel India Privacy policy and event guidelines.
-                        <br><br>
-                        Only a limited set of vouchers are sold online, on first come first basis.
-                        Cost: $10.61/-
-                        <br><br>
-                        Please make sure you bring the PayPal receipt (digital on phone or printed) to the venue.
-                    </p>
-                    <a class="btn" type="button" target="_blank"
-                       href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9LPSRC3YJA5V2'>
-                        Buy Tickets</a>
-                </div>
+                </div><!-- panel-group -->
+
+
             </div>
         </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">×</button>
-                    <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
-                </div>
-                <div class="modal-body">
-                    <form role="form">
-                        <div class="form-group">
-                            <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per
-                                person</label>
-                            <input type="number" class="form-control" id="psw" placeholder="How many?">
-                        </div>
-                        <div class="form-group">
-                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
-                            <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-                        </div>
-                        <button type="submit" class="btn btn-block">Pay
-                            <span class="glyphicon glyphicon-ok"></span>
-                        </button>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-                        <span class="glyphicon glyphicon-remove"></span> Cancel
-                    </button>
-                    <p>Need <a href="#">help?</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Container (FAQs) -->
-<div id="faqs" class="faqs">
-    <div class="container">
-        <div>
-            <h3 style="color: #fff;">FAQ</h3>
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingOne">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                               aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                I am an Intel employee. Where can I buy my food voucher?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne"
-                         aria-expanded="false" style="height: 0px;">
-                        <div class="panel-body">
-                            You can buy online here. Please click on the Buy Ticket Tab on the top.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                               href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                What is the price for a food voucher ?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo"
-                         aria-expanded="false" style="height: 0px;">
-                        <div class="panel-body">
-                            $10 each - Early bird pricing (limited time).
-                            Prices are subject to change without notice.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                               href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                What do you mean by a food voucher?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
-                         aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
-                        <div class="panel-body">
-                            The PayPal receipt (soft copy) you get when you purchase a ticket for the event is
-                            considered a food voucher. This voucher gets you entry for the show as well as for the food.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                               href="#collapse4" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Do I need to get a printout of the receipt of the food voucher?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree"
-                         aria-expanded="false" style="height: 0px;">
-                        <div class="panel-body">
-                            No. Only a soft copy of the PayPal receipt on your mobile or Tablet is needed as a proof of
-                            food voucher.
-                            Our volunteers will be checking for the PayPal receipt.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                               href="#collapse5" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                I want to only watch the show and need no food. Do I still need to buy the food
-                                vouchers?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree"
-                         aria-expanded="false" style="height: 0px;">
-                        <div class="panel-body">
-                            Yes. Food vouchers are compulsory for entry.
-                            Failure to show the soft copy of the receipt will lead to denial of admission to the event.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                               href="#collapse6" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Do you have any walk-in food voucher?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree"
-                         aria-expanded="false" style="height: 0px;">
-                        <div class="panel-body">
-                            No. All food vouchers are available to purchase before the event.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                               href="#collapse7" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Can I buy food voucher for my friends who is non-Intel?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree"
-                         aria-expanded="false">
-                        <div class="panel-body">
-                            Yes you can. We would ask you to restrict to friends and family. Please follow Intel's code
-                            of conduct/ethics policies.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                               href="#collapse8" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                I am not an Intel employee. Where can I buy the food voucher?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree"
-                         aria-expanded="false">
-                        <div class="panel-body">
-                            Only Intel employees are eligible to buy food vouchers online.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                               href="#collapse9" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Are there any family prices?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree"
-                         aria-expanded="false">
-                        <div class="panel-body">
-                            No. We offer only one fixed price. Prices are subject to change without notice.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                               href="#collapse10" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Are there special prices for kids?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree"
-                         aria-expanded="false">
-                        <div class="panel-body">
-                            No, but we would like to offer free entry for children 3 and under. Please remember that
-                            your toddler will not be assigned a separate seat at the venue.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                               href="#collapse11" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Is there a maximum limit to number of tickets someone can purchase?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree"
-                         aria-expanded="false">
-                        <div class="panel-body">
-                            Currently there is no limit but the maximum limit are subject to change with notice.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                               href="#collapse12" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Is food included in the price?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree"
-                         aria-expanded="false">
-                        <div class="panel-body">
-                            Yes. Dinner is included in the price.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                               href="#collapse13" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Can the food Voucher be refunded?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree"
-                         aria-expanded="false">
-                        <div class="panel-body">
-                            No. All sales are final and we do not issue any refunds.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                               href="#collapse14" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Is parking included in the food voucher price?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree"
-                         aria-expanded="false">
-                        <div class="panel-body">
-                            No. Please plan ahead for parking. As the event is hosted in Downtown Portland nearer to MAX
-                            stations, we recommend you to use public transport or carpool with your friends and family.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                               href="#collapse15" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                What if I lose the food receipt? Do I need to present the food voucher at the venue?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree"
-                         aria-expanded="false">
-                        <div class="panel-body">
-                            Please keep your food voucher receipt (soft copy) safe. It’s not practical (logistically) to
-                            allow people to the venue without a food voucher.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                               href="#collapse16" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                I am volunteering/participating for the show. Should I buy vouchers for myself?
-
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree"
-                         aria-expanded="false">
-                        <div class="panel-body">
-                            IIndia-OR requests you to hold off on buying vouchers for now. We are aiming for
-                            complementary entry for performers to the show, if not you will get a chance to buy the
-                            vouchers at later dates.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                               href="#collapse17" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                I am volunteering/participating for the show. Should I buy vouchers for my family?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree"
-                         aria-expanded="false">
-                        <div class="panel-body">
-                            Please purchase vouchers for your family members right now.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                               href="#collapse18" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Do I need my Intel badge?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree"
-                         aria-expanded="false">
-                        <div class="panel-body">
-                            No
-                        </div>
-                    </div>
-                </div>
-
-            </div><!-- panel-group -->
-
-
-        </div>
-    </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div id="contact" class="container">
-    <h3 class="text-center">
-        Contact<span class="glyphicon glyphicon-map-marker"></span>
-    </h3>
-    <div class="row">
-        <iframe
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container">
+        <h3 class="text-center">
+            Contact<span class="glyphicon glyphicon-map-marker"></span>
+        </h3>
+        <div class="row">
+            <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3714.9271975775077!2d-122.68534204976012!3d45.51126883848637!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xadf049df4a8ce7f6!2sViking%20Pavilion%20at%20the%20Peter%20W.%20Stott%20Center!5e0!3m2!1sen!2sus!4v1568784931154!5m2!1sen!2sus"
                 width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+
+        <p class="text-center">
+            <em>Contact us for any questions</em>
+        </p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <p> Event info and all general queries:</p>
+                <p><span class="glyphicon glyphicon-phone"></span> Nikhil Shelke 857-210-6604</p>
+                <p><span class="glyphicon glyphicon-phone"></span> Avinash Gudagi 737-247-9015</p>
+                <p><span class="glyphicon glyphicon-phone"></span> Thanaji Rao 727-421-1327</p>
+            </div>
+            <div class="col-md-8">
+                <form action="https://formspree.io/bhatvivek93@gmail.com" method="POST">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email"
+                                required>
+                        </div>
+                    </div>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment"
+                        rows="5"></textarea>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <button class="btn pull-right" type="submit">Send</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+        <br>
+
     </div>
 
-    <p class="text-center">
-        <em>Contact us for any questions</em>
-    </p>
+    <!-- Footer -->
+    <footer class="text-center">
+        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a><br><br>
+    </footer>
 
-    <div class="row">
-        <div class="col-md-4">
-            <p> Event info and all general queries:</p>
-            <p><span class="glyphicon glyphicon-phone"></span> Nikhil Shelke 857-210-6604</p>
-            <p><span class="glyphicon glyphicon-phone"></span> Avinash Gudagi 737-247-9015</p>
-            <p><span class="glyphicon glyphicon-phone"></span> Thanaji Rao 727-421-1327</p>
-        </div>
-        <div class="col-md-8">
-            <form action="https://formspree.io/bhatvivek93@gmail.com" method="POST">
-                <div class="row">
-                    <div class="col-sm-6 form-group">
-                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                    </div>
-                    <div class="col-sm-6 form-group">
-                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                    </div>
-                </div>
-                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-                <br>
-                <div class="row">
-                    <div class="col-md-12 form-group">
-                        <button class="btn pull-right" type="submit">Send</button>
-                    </div>
-                </div>
+    <script>
+        $(document).ready(function () {
+            // Initialize Tooltip
+            $('[data-toggle="tooltip"]').tooltip();
 
-            </form>
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
 
-        </div>
-    </div>
-    <br>
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
 
-</div>
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-<!-- Footer -->
-<footer class="text-center">
-    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-    </a><br><br>
-</footer>
+                    // Store hash
+                    var hash = this.hash;
 
-<script>
-    $(document).ready(function () {
-        // Initialize Tooltip
-        $('[data-toggle="tooltip"]').tooltip();
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
 
-        // Add smooth scrolling to all links in navbar + footer link
-        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-
-                // Prevent default anchor click behavior
-                event.preventDefault();
-
-                // Store hash
-                var hash = this.hash;
-
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 900, function () {
-
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-            } // End if
-        });
-    })
-</script>
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        })
+    </script>
 
 </body>
+
 </html>
